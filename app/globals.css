@@ -3,11 +3,42 @@
 @tailwind utilities;
 
 body {
-	color: #181b19;
-	background: #f7f7f6;
+	color: #242424;
+	background: #f1f1f1;
 	font-family: "Poppins", sans-serif;
 }
 
 @layer utilities {
 	/* Reusable utility classes */
+	.flex-between {
+		@apply flex items-center justify-between;
+	}
+
+	.flex-center {
+		@apply flex items-center justify-center;
+	}
+
+	.flex-column {
+		@apply flex flex-col gap-3;
+	}
+
+	.flex-column-between {
+		@apply flex flex-col justify-between;
+	}
+
+	.h3-bold {
+		@apply font-semibold text-lg mb-0;
+	}
+
+	.text-description {
+		@apply text-neutral-400 font-light text-sm;
+	}
+
+	.text-bold {
+		@apply font-semibold text-lg;
+	}
+
+	.small-text {
+		@apply text-sm leading-3 tracking-wide text-primary-600;
+	}
 }
