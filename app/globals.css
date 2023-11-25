@@ -11,7 +11,7 @@ body {
 @layer utilities {
 	/* Reusable utility classes */
 	.flex-start {
-		@apply flex items-center gap-5;
+		@apply flex items-center;
 	}
 	.flex-between {
 		@apply flex items-center justify-between;
@@ -22,7 +22,7 @@ body {
 	}
 
 	.flex-column {
-		@apply flex flex-col gap-3;
+		@apply flex flex-col;
 	}
 
 	.flex-column-between {
@@ -43,5 +43,9 @@ body {
 
 	.small-text {
 		@apply text-sm leading-3 tracking-wide text-primary-600;
+	}
+
+	.hide-scrollbar::-webkit-scrollbar {
+		@apply hidden;
 	}
 }
