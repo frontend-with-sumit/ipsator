@@ -6,6 +6,10 @@ A responsive UI design for the product listing page.
 - Next.js
 - TypeScript
 - TailwindCSS
+- Mock API = dummyjson.com
+
+## Considerations
+Due to the limitation of the mock API, search within a particular category couldn't be achieved. However, search using product name is working perfectly fine.
 
 ## Running the project
 - Clone the project
