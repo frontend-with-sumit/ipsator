@@ -1,8 +1,9 @@
 import React from "react";
 
-import Product from "./Product";
-import Loading from "../Loading";
 import { IProduct } from "@/app/page";
+
+import Product from "./Product";
+import Message from "../Message";
 
 interface Props {
 	products: IProduct[];
@@ -11,11 +12,15 @@ interface Props {
 const ProductsList = ({ products }: Props) => {
 	return (
 		<>
-			<div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-4">
-				{products?.map((product) => (
-					<Product product={product} key={product?.id} />
-				))}
-			</div>
+			{products.length ? (
+				<div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-4">
+					{products?.map((product) => (
+						<Product product={product} key={product?.id} />
+					))}
+				</div>
+			) : (
+				<Message label="No products available" />
+			)}
 		</>
 	);
 };

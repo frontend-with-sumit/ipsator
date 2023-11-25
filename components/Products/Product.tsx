@@ -23,7 +23,7 @@ const Product = ({ product }: Props) => {
 					fill
 				/>
 			</div>
-			<div className="p-5 flex-column">
+			<div className="p-5 flex-column gap-3">
 				<p className="small-text">{product?.brand}</p>
 				<h3 className="h3-bold line-clamp-1">{product?.title}</h3>
 				<p className="line-clamp-2 text-description">{product?.description}</p>

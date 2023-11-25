@@ -1,5 +1,5 @@
 .pagination {
-	@apply flex justify-center items-stretch my-4 !important;
+	@apply flex flex-wrap justify-center items-stretch;
 }
 
 .page a,
