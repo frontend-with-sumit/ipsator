@@ -1,5 +1,4 @@
-import React, { ChangeEvent } from "react";
-import { BiSort } from "react-icons/bi";
+import React from "react";
 import {
 	Select,
 	SelectTrigger,

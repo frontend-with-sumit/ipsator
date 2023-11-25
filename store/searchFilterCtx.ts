@@ -1,4 +1,4 @@
-import { ChangeEvent, Dispatch, SetStateAction, createContext } from "react";
+import { ChangeEvent, createContext } from "react";
 
 export interface SearchFilterContextData {
 	searchQuery: string;

@@ -1,5 +1,6 @@
 import React from "react";
 import { BiSolidCategoryAlt, BiSort } from "react-icons/bi";
+
 import Filter from "./Filter";
 
 import { useSearchFilterContext } from "@/lib/hooks/useSearchFilterContext";
@@ -44,7 +45,7 @@ const Filters = () => {
 		<div className="flex-start gap-5 mt-6">
 			<Filter
 				items={SORT_OPT}
-				name="Sort"
+				name="Sort By"
 				value={filters?.sortBy}
 				icon={<BiSort size={25} className="text-gray-500 font-light" />}
 				onChange={(value: string) => onUpdateFilters("sortBy", value)}
