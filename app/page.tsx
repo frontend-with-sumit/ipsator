@@ -111,7 +111,7 @@ export default function Home() {
 	};
 
 	return (
-		<main className="flex-column min-h-screen gap-6 md:px-24 sm:px-10 py-5">
+		<main className="flex-column min-h-screen gap-6 md:px-24 max-sm:px-7 py-5">
 			<SFProvider
 				searchQuery={searchQuery}
 				filters={filters}
