@@ -10,6 +10,9 @@ body {
 
 @layer utilities {
 	/* Reusable utility classes */
+	.flex-start {
+		@apply flex items-center gap-5;
+	}
 	.flex-between {
 		@apply flex items-center justify-between;
 	}
