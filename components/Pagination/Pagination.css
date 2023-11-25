@@ -1,0 +1,37 @@
+.pagination {
+	@apply flex justify-center items-stretch my-4 !important;
+}
+
+.page a,
+.break,
+.previous,
+.next {
+	@apply flex-center cursor-pointer outline outline-1 outline-gray-200;
+}
+
+.page a,
+.break,
+.previousLink,
+.nextLink {
+	@apply py-2 px-4;
+}
+
+.page:first-child {
+	@apply rounded-tl-sm rounded-bl-sm;
+}
+
+.page:last-child {
+	@apply rounded-tr-sm rounded-br-sm;
+}
+
+.break {
+	@apply pointer-events-none;
+}
+
+.selected {
+	@apply bg-red-400 text-white font-bold cursor-not-allowed;
+}
+
+.disabled {
+	@apply text-gray-500 bg-gray-100 cursor-not-allowed pointer-events-none;
+}

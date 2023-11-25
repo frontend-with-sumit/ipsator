@@ -2,8 +2,9 @@ import React from "react";
 import { PiShoppingCart } from "react-icons/pi";
 
 import Image from "next/image";
-import { IProduct } from "./ProductsList";
+
 import { formatNumber } from "@/lib/utils";
+import { IProduct } from "@/app/page";
 
 interface Props {
 	product: IProduct;
@@ -13,7 +14,14 @@ const Product = ({ product }: Props) => {
 	return (
 		<div className="bg-white max-h-96 rounded-2xl overflow-hidden flex-column-between">
 			<div className="h-48 relative">
-				<Image src={product?.thumbnail} alt={product?.title} fill />
+				<Image
+					src={product?.thumbnail}
+					alt={product?.title}
+					sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+					style={{ objectFit: "cover" }}
+					loading="lazy"
+					fill
+				/>
 			</div>
 			<div className="p-5 flex-column">
 				<p className="small-text">{product?.brand}</p>
