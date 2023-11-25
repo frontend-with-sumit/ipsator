@@ -34,7 +34,7 @@ body {
 	}
 
 	.text-description {
-		@apply text-neutral-400 font-light text-sm;
+		@apply text-neutral-600 font-light text-sm;
 	}
 
 	.text-bold {
